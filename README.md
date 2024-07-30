@@ -12,7 +12,7 @@ Our set up involves two crates `lib1` and `lib2`.
 - `lib2` has a feature called `circular` which turns on its optional `lib1` dependency. Turning this
    feature on is expected to break.
 
-The docs have this to say about the `?` syntax:
+The [docs](https://doc.rust-lang.org/cargo/reference/features.html#dependency-features) have this to say about the `?` syntax:
 
 > The "package-name/feature-name" syntax will also enable package-name if it is an optional dependency. Often this is not what you want. You can add a ? as in "package-name?/feature-name" which will **only enable the given feature if something else enables the optional dependency**.
 
