@@ -1,0 +1,12 @@
+[package]
+name = "lib2"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+lib1 = { path = "../lib1", optional = true }
+
+[features]
+circular = ["dep:lib1"]
+not-circular = ["lib1?/not-circular"]

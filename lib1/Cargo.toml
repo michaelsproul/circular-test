@@ -1,0 +1,14 @@
+[package]
+name = "lib1"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+lib2 = { path = "../lib2" }
+
+[features]
+not-circular = []
+
+# [patch.'file://../lib2']
+# lib2 = { path = "/home/michael/Programming/circular-test/lib2" }
