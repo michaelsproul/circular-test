@@ -9,6 +9,3 @@ lib2 = { path = "../lib2" }
 
 [features]
 not-circular = []
-
-# [patch.'file://../lib2']
-# lib2 = { path = "/home/michael/Programming/circular-test/lib2" }
